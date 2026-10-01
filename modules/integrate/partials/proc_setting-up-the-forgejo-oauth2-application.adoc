@@ -23,7 +23,7 @@ Set up a Forgejo OAuth2 application.
 
 . Enter `pass:c,a,q[{prod-url}]/api/oauth/callback` as the *Redirect URIs*.
 
-. Check the *Confidential client* checkbox.
+. Ensure *Confidential client* is selected.
 
 . Click *Create application*.
 

@@ -53,9 +53,11 @@ The GitLab authorized application must have the following scopes enabled. Missin
 
 == Forgejo server endpoint
 
-The Forgejo OAuth Secret must have the `che.eclipse.org/scm-server-endpoint` annotation set to the URL of the Forgejo server. Forgejo has no default public instance, so {prod-short} rejects a `CheCluster` that references a Forgejo Secret without this annotation.
+The Forgejo OAuth Secret must have the `che.eclipse.org/scm-server-endpoint` annotation set to the URL of the Forgejo server. Forgejo has no default public instance, so the {prod-short} Operator ignores a Forgejo Secret without this annotation and logs a message about the skipped Secret.
 
-{prod-short} uses at most two Forgejo OAuth Secrets. When more exist, {prod-short} uses the first two sorted by the `che.eclipse.org/scm-server-endpoint` annotation and displays a warning when the `CheCluster` is updated.
+The admission webhook checks only the Forgejo Secrets referenced in the `spec.gitServices.forgejo` field of the `CheCluster` custom resource. {prod-short} rejects a `CheCluster` that references a Forgejo Secret without the `che.eclipse.org/scm-server-endpoint` annotation.
+
+{prod-short} uses at most two Forgejo OAuth Secrets. When more exist, {prod-short} uses the first two sorted by the `che.eclipse.org/scm-server-endpoint` annotation and displays a warning when the `CheCluster` is created or updated. The {prod-short} Operator also logs a message when it mounts more than two Forgejo OAuth Secrets.
 
 == Bitbucket Server OAuth 1.0 public key
 
