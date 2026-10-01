@@ -1,6 +1,6 @@
 :_content-type: CONCEPT
 :description: How Git authentication works in cloud development environments
-:keywords: authentication, authenticate, github, gitlab, bitbucket
+:keywords: authentication, authenticate, github, gitlab, forgejo, bitbucket
 :navtitle: How Git authentication works in cloud development environments
 :page-aliases: end-user-guide:authenticating-to-a-git-server-from-a-workspace.adoc, get-started:authenticating-to-a-git-server-from-a-workspace.adoc
 
@@ -14,7 +14,7 @@ When you clone a private repository or push code from a cloud development enviro
 
 User authentication to a Git server from a cloud development environment is configured by the administrator or, in some cases, by the individual user:
 
-* Your administrator configures an OAuth application on GitHub, GitLab, Bitbucket, or Microsoft Azure Repos for your {prod} instance.
+* Your administrator configures an OAuth application on GitHub, GitLab, Forgejo, Bitbucket, or Microsoft Azure Repos for your {prod} instance.
 
 * Alternatively, individual users create their own {kubernetes} Secrets for personal Git-provider access tokens or configure SSH keys.
 

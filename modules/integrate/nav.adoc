@@ -2,6 +2,7 @@
 * xref:configuring-oauth-for-git-providers.adoc[]
 ** xref:configuring-oauth-2-for-github.adoc[]
 ** xref:configuring-oauth-2-for-gitlab.adoc[]
+** xref:configuring-oauth-2-for-forgejo.adoc[]
 ** xref:configuring-oauth-2-for-a-bitbucket-server.adoc[]
 ** xref:configuring-oauth-2-for-the-bitbucket-cloud.adoc[]
 ** xref:configuring-oauth-1-for-a-bitbucket-server.adoc[]

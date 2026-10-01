@@ -1,0 +1,41 @@
+:_content-type: PROCEDURE
+:description: Setting up the Forgejo OAuth2 application
+:keywords: forgejo, forgejo-application, oauth2-application
+:navtitle: Setting up the Forgejo OAuth2 application
+// :page-aliases:
+
+[id="setting-up-the-forgejo-oauth2-application"]
+= Setting up the Forgejo OAuth2 application
+
+Set up a Forgejo OAuth2 application.
+
+.Prerequisites
+
+* You are logged in to Forgejo.
+
+.Procedure
+
+. Open the applications settings:
+** For an application owned by your account, click your avatar and go to menu:Settings[Applications].
+** For an application available to the whole instance, as a Forgejo administrator, go to menu:Site administration[Integrations > Applications].
+
+. In the *Manage OAuth2 applications* section, enter *{prod-short}* as the *Application name*.
+
+. Enter `pass:c,a,q[{prod-url}]/api/oauth/callback` as the *Redirect URIs*.
+
+. Check the *Confidential client* checkbox.
+
+. Click *Create application*.
+
+. Copy and save the *Client ID* for use when applying the Forgejo OAuth2 application Secret.
+
+. Copy and save the *Client secret* for use when applying the Forgejo OAuth2 application Secret.
++
+[NOTE]
+====
+The *Client secret* is displayed only once. If you lose it, regenerate it on the application page.
+====
+
+.Additional resources
+
+* link:https://forgejo.org/docs/latest/user/oauth2-provider/[Forgejo Docs: OAuth2 provider]

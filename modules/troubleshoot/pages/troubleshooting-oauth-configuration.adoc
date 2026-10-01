@@ -24,6 +24,7 @@ Verify this value in your Git provider OAuth application settings:
 
 * *GitHub*: *Authorization callback URL* field
 * *GitLab*: *Redirect URI* field
+* *Forgejo*: *Redirect URIs* field
 * *Bitbucket Cloud*: *Callback URL* field
 * *Bitbucket Server* (OAuth 2.0): *Redirect URL* field
 * *Microsoft Azure DevOps*: Redirect URI registered in Microsoft Entra ID
@@ -49,6 +50,12 @@ The GitLab authorized application must have the following scopes enabled. Missin
 * `api`
 * `write_repository`
 * `openid`
+
+== Forgejo server endpoint
+
+The Forgejo OAuth Secret must have the `che.eclipse.org/scm-server-endpoint` annotation set to the URL of the Forgejo server. Forgejo has no default public instance, so {prod-short} rejects a `CheCluster` that references a Forgejo Secret without this annotation.
+
+{prod-short} uses at most two Forgejo OAuth Secrets. When more exist, {prod-short} uses the first two sorted by the `che.eclipse.org/scm-server-endpoint` annotation and displays a warning when the `CheCluster` is updated.
 
 == Bitbucket Server OAuth 1.0 public key
 

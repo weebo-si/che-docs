@@ -108,6 +108,7 @@ parse_content() {
   parse_section "gitServices.properties.gitlab" "\`gitlab\` options."
   parse_section "gitServices.properties.bitbucket" "\`bitbucket\` options."
   parse_section "gitServices.properties.azure" "\`azure\` options."
+  parse_section "gitServices.properties.forgejo" "\`forgejo\` options."
 
   parse_section "networking" "Networking, {prod-short} authentication and TLS configuration."
   parse_section "networking.properties.auth" "\`auth\` options."

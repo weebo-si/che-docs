@@ -69,6 +69,7 @@ This section describes all fields available to customize the `CheCluster` Custom
 ** xref:checluster-custom-resource-gitServices-gitlab-settings[]
 ** xref:checluster-custom-resource-gitServices-bitbucket-settings[]
 ** xref:checluster-custom-resource-gitServices-azure-settings[]
+** xref:checluster-custom-resource-gitServices-forgejo-settings[]
 * xref:checluster-custom-resource-networking-settings[]
 ** xref:checluster-custom-resource-networking-auth-settings[]
 *** xref:checluster-custom-resource-networking-auth-gateway-settings[]

@@ -66,6 +66,21 @@ For GitHub, you can also use a URL of a directory containing a devfile, or a dir
 | Git+SSH: `pass:c,a,q[{prod-url}#git@__<gitlab_host>__:__<user_or_org>__/__<repository>__.git]`
 |===
 +
+.Forgejo
+[cols="1",options="header"]
+|===
+| URL pattern
+
+| Default branch: `pass:c,a,q[{prod-url}#https://__<forgejo_host>__/__<user_or_org>__/__<repository>__]`
+| Specified branch: `pass:c,a,q[{prod-url}#https://__<forgejo_host>__/__<user_or_org>__/__<repository>__/src/branch/__<branch_name>__]`
+| Specified tag: `pass:c,a,q[{prod-url}#https://__<forgejo_host>__/__<user_or_org>__/__<repository>__/src/tag/__<tag_name>__]`
+| Specified commit: `pass:c,a,q[{prod-url}#https://__<forgejo_host>__/__<user_or_org>__/__<repository>__/src/commit/__<commit_sha>__]`
+| Git+SSH: `pass:c,a,q[{prod-url}#git@__<forgejo_host>__:__<user_or_org>__/__<repository>__.git]`
+| Git+SSH with a custom port: `pass:c,a,q[{prod-url}#ssh://git@__<forgejo_host>__:__<ssh_port>__/__<user_or_org>__/__<repository>__.git]`
+|===
++
+For Forgejo, {prod-short} recognizes the instance configured by your administrator. For another Forgejo instance, add a personal access token for it first. See xref:using-a-git-provider-access-token.adoc[].
++
 .Bitbucket Server
 [cols="1",options="header"]
 |===

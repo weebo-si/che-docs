@@ -1,0 +1,17 @@
+:_content-type: ASSEMBLY
+:description: Configuring OAuth 2.0 for Forgejo
+:keywords: configuring-oauth, authorization, forgejo, codeberg, oauth-2, oauth-2.0
+:navtitle: Connect Forgejo with OAuth
+:page-aliases:
+
+[id="configuring-oauth-2-for-forgejo"]
+= Connect Forgejo with OAuth
+
+To enable users to work with a remote Git repository that is hosted on a Forgejo instance, such as a self-hosted Forgejo server or link:https://codeberg.org[Codeberg]:
+
+. Set up the Forgejo OAuth2 application.
+. Apply the Forgejo OAuth2 application Secret.
+
+include::partial$proc_setting-up-the-forgejo-oauth2-application.adoc[leveloffset=+1]
+
+include::partial$proc_applying-the-forgejo-oauth2-application-secret.adoc[leveloffset=+1]
